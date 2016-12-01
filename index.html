@@ -4,59 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Table</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+        
+        header,
+        footer {
+            color: black;
+            
+        }
+        
+        article {
+            margin-left: 150px;
+            padding: 1em;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-            <td rowspan="2"><b>Summary</b></td>
-            <td><b>Quarter 1</b></td>
-            <td><b>Quarter 2</b></td>
-        </tr>
-        <tr>
-            <td><b>Results</b></td>
-            <td><b>Results</b></td>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>10</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>February</td>
-            <td>30</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td colspan="2">100</td>
-        </tr>
-    </table>
-    <div>
-        <ul type="square">
-            <li>Маркований список квадратиком</li>
-            <li>список 2</li>
-            <li>список 3</li>
-            <li>список 4</li>
-        </ul>
-        <ul type="circle">
-            <li>Маркований список кругом</li>
-            <li>список 2.1</li>
-            <li>список 3.1</li>
-            <li>список 4.1</li>
-        </ul>
-        <ol type="A" start="15" reversed>
-            <li>нумерований буквенний список з зворотнім відліком</li>
-            <li>нумерований буквенний список 1</li>
-            <li>нумерований буквенний список 2</li>
-        </ol>
-        <ol type="1" start="15">
-            <li>нумерований цифровий список з заданим продовженням відліку</li>
-            <li>нумерований цифровий список 1</li>
-            <li>нумерований цифровий список 2</li>
-        </ol>
+    <div class="container">
+        <header>
+            <table border="1" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td rowspan="2"><b>Summary</b></td>
+                    <td><b>Quarter 1</b></td>
+                    <td><b>Quarter 2</b></td>
+                </tr>
+                <tr>
+                    <td><b>Results</b></td>
+                    <td><b>Results</b></td>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>30</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td colspan="2">100</td>
+                </tr>
+            </table>
+        </header>
+        <article>
+            <ul type="square">
+                <li>Маркований список квадратиком</li>
+                <li>список 2</li>
+                <li>список 3</li>
+                <li>список 4</li>
+            </ul>
+            <ul type="circle">
+                <li>Маркований список кругом</li>
+                <li>список 2.1</li>
+                <li>список 3.1</li>
+                <li>список 4.1</li>
+            </ul>
+            <ol type="A" start="15" reversed>
+                <li>нумерований буквенний список з зворотнім відліком</li>
+                <li>нумерований буквенний список 1</li>
+                <li>нумерований буквенний список 2</li>
+            </ol>
+            <ol type="1" start="15">
+                <li>нумерований цифровий список з заданим продовженням відліку</li>
+                <li>нумерований цифровий список 1</li>
+                <li>нумерований цифровий список 2</li>
+            </ol>
+        </article>
+        <footer>
+            <a href="form.html">FORM</a>
+        </footer>
     </div>
-    <a href="form.html">FORM</a>
 </body>
 
 </html>
