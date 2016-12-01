@@ -7,15 +7,38 @@
 </head>
 
 <body>
-
     <form action="https://formspree.io/reversx@gmail.com" method="POST">
-        <label for="name">Name:</label>
+        <label for="name">Ім'я:</label>
         <input type="text" name="name" id="name" required/>
-        <br><label>Email: 
-    <input type="email" name="email" id="email" required/></label>
-        <br><label for="car-plate">Car Number:</label>
-        <input type="text" name="car-plate" id="car-plate" placeholder="AA1234BB" title="AA1234BB" pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}">
-        <br><label for="comment">Comment :</label>
+        <br><label>Email:</label><input type="email" name="email" id="email" required/>
+        <br><label>Дата народження:</label>
+        <input type="text" name="age_day" placeholder="15" title="01" pattern="[0-3]{1}[0-9]{1}" required>
+        <input list="mounts" name="mounts" placeholder="місяць" required>
+        <datalist id="mounts">
+        <option value="Січень">
+        <option value="Лютий">
+        <option value="Березень">
+        <option value="Квітень">
+        <option value="Травень">
+        <option value="Червень">
+        <option value="Липень">
+        <option value="Серпень">
+        <option value="Вересень">
+        <option value="Жовтень">
+        <option value="Листопад">
+        <option value="Грудень">
+        </datalist>
+        <input type="text" name="age_year" placeholder="1999" title="1999" pattern="[0-9]{4}" required>
+        <br><label>Стать</label>
+        <br><label><input type="radio" name="man-woman"> Чоловік</label>
+        <br><label><input type="radio" name="man-woman"> Жінка</label>
+        <br><label>Сімейний стан</label>
+        <br><label><input type="checkbox" name="personality"> Одружений/Заміжня</label>
+        <br><label><input type="checkbox" name="personality"> Розведений/Розведена</label>
+        <br><label><input type="checkbox" name="personality"> В пошуку</label>
+        <br><label>Номер телефону:</label>
+        <input type="text" name="telefon" id="telefon" placeholder="380670000000" title="380670000000" pattern="[0-9]{12}">
+        <br><label>Про себе :</label>
         <br><textarea name="comment" id="coment"></textarea>
         <br><input type="submit" value="Відправити">
     </form>
